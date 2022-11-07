@@ -45,14 +45,14 @@ driver = webdriver.Chrome('C:\chromedriver\chromedriver.exe',chrome_options=chro
 
 for i in range(1,int(pages)+1):
     #웹 페이지 접근 후 1초동안 로드를 기다림
-    driver.get('https://pixabay.com/images/search/'+keyword+'/?manual_search=1&pagi='+str(i))  #'?pagi=' -> '?manual_search=' 수정 22/11/06
+    driver.get('https://pixabay.com/ko/photos/search/'+keyword+'/?manual_search=1&pagi='+str(i))  #'?pagi=' -> '?manual_search=1&pagi=' 로 수정 22/11/06
     sleep(1)
 
     #크롤링이 가능하도록 html코드 가공
     html = driver.page_source
     soup = BeautifulSoup(html,'html.parser')
 
-    imgs = soup.select('div.flex_grid.credits.search_results img') #요소 선택
+    imgs=(soup.select(f'#content > div > div:nth-child(3) > div > div.row-masonry.search-results > div > div > div > div > a > img')) #요소 선택 div.flex_grid.credits.search_results -> row-masonry search-results
 
     #마지막 페이지 여부 결정
     lastPage=False
