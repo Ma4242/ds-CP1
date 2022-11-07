@@ -14,3 +14,6 @@ ds기반의 인공지능을 공부한다는 식
 스프린트 앱 리뷰
 
 https://#play.google.com/store/apps/details?id=dev.lab90.spaceForNutrition
+
+11/07
+오후 3:55 이미지 크롤링 진행 그러나 라벨링을 진행을 어떻게 진행 해야 할까?
