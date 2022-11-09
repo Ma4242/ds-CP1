@@ -97,3 +97,5 @@ https://play.google.com/store/apps/details?id=dev.lab90.spaceForNutrition
 OpenCV 소개
 
 https://velog.io/@jaehyeong/OpenCV%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EA%B8%B0%EC%B4%88-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-with-Python
+
+https://ddolcat.tistory.com/958
